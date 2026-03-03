@@ -3,29 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funnybunny's Silly Comixs</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Funny Bunny's Silly Comixs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f3f4f6;
+        }
+        h1 {
+            color: #4a90e2;
+        }
+        .comix-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        .comix {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin: 10px;
+            padding: 15px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 200px;
+        }
+        .comix img {
+            width: 100%;
+            border-radius: 4px;
+        }
+        .add-comix-button {
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .add-comix-button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Funnybunny's Silly Comixs</h1>
-        <p>Your daily dose of laughter!</p>
-    </header>
-    <main>
-        <section>
-            <h2>Latest Comixs</h2>
-            <article>
-                <h3>Comix Title 1</h3>
-                <p>Summary of comix 1...</p>
-            </article>
-            <article>
-                <h3>Comix Title 2</h3>
-                <p>Summary of comix 2...</p>
-            </article>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Funnybunny's Silly Comixs</p>
-    </footer>
+    <h1>Welcome to Funny Bunny's Silly Comixs</h1>
+    <button class="add-comix-button">Add Comixs</button>
+    <div class="comix-container">
+        <div class="comix">
+            <img src="sample1.jpg" alt="Sample Comix 1">
+            <p>Sample Comix 1 Description</p>
+        </div>
+        <div class="comix">
+            <img src="sample2.jpg" alt="Sample Comix 2">
+            <p>Sample Comix 2 Description</p>
+        </div>
+        <div class="comix">
+            <img src="sample3.jpg" alt="Sample Comix 3">
+            <p>Sample Comix 3 Description</p>
+        </div>
+    </div>
 </body>
 </html>
