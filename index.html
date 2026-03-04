@@ -3,65 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funny Bunny's Silly Comixs</title>
+    <title>Funny Bunny's Silly Comix</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f3f4f6;
-        }
-        h1 {
-            color: #4a90e2;
-        }
-        .comix-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin: 20px;
-        }
-        .comix {
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            margin: 10px;
-            padding: 15px;
-            background-color: white;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            width: 200px;
-        }
-        .comix img {
-            width: 100%;
-            border-radius: 4px;
-        }
-        .add-comix-button {
-            padding: 10px 20px;
-            background-color: #4caf50;
+            background: linear-gradient(45deg, #f3ec78, #af4261);
             color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
+            margin: 0;
+            padding: 0;
         }
-        .add-comix-button:hover {
-            background-color: #45a049;
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        section {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .partners {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery img {
+            margin: 10px;
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to Funny Bunny's Silly Comixs</h1>
-    <button class="add-comix-button">Add Comixs</button>
-    <div class="comix-container">
-        <div class="comix">
-            <img src="sample1.jpg" alt="Sample Comix 1">
-            <p>Sample Comix 1 Description</p>
-        </div>
-        <div class="comix">
-            <img src="sample2.jpg" alt="Sample Comix 2">
-            <p>Sample Comix 2 Description</p>
-        </div>
-        <div class="comix">
-            <img src="sample3.jpg" alt="Sample Comix 3">
-            <p>Sample Comix 3 Description</p>
-        </div>
+    <header>
+        <h1>Welcome to Funny Bunny's Silly Comix</h1>
+        <p>Email us at: <a href="mailto:funnybunnysillycomixs@outlook.com">funnybunnysillycomixs@outlook.com</a></p>
+    </header>
+    <section>
+        <h2>About Us</h2>
+        <p>We are dedicated to bringing you the funniest and silliest comix out there! Our goal is to make you laugh and inspire creativity.</p>
+    </section>
+    <section>
+        <h2>Latest Updates</h2>
+        <p>Stay tuned for our latest comix releases and updates!</p>
+    </section>
+    <section>
+        <h2>Community Highlights</h2>
+        <p>Join our community and showcase your creativity with us!</p>
+    </section>
+    <section class="gallery">
+        <h2>Featured Comix Gallery</h2>
+        <img src="comix1.jpg" alt="Comix 1">
+        <img src="comix2.jpg" alt="Comix 2">
+        <img src="comix3.jpg" alt="Comix 3">
+    </section>
+    <div class="partners">
+        <h2>Partners</h2>
+        <p>We are proudly partnered with:</p>
+        <p><strong>Arion Weekly</strong></p>
     </div>
+    <footer>
+        <p>Contact us: <a href="mailto:funnybunnysillycomixs@outlook.com">funnybunnysillycomixs@outlook.com</a></p>
+        <p>Follow us on social media!</p>
+    </footer>
 </body>
 </html>
