@@ -6,54 +6,69 @@
     <title>Funny Bunny's Silly Comixs</title>
     <style>
         body {
-            background: linear-gradient(to bottom, #ffcccb, #ffebcd);
             font-family: 'Comic Sans MS', cursive, sans-serif;
-            color: #333;
+            background-color: #ffeb3b;
+            color: #4a4a4a;
+        }
+        h1 {
+            text-align: center;
+            color: #d5006d;
+        }
+        .btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #3f51b5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
         }
         .comix-card {
-            border: 2px solid #ff69b4;
+            border: 2px solid #ff5722;
             border-radius: 10px;
-            padding: 10px;
-            margin: 10px;
+            margin: 15px;
+            padding: 15px;
             background-color: #fff;
-            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-        }
-        footer {
-            margin-top: 20px;
+            display: inline-block;
+            width: 200px;
             text-align: center;
-            font-size: 0.9em;
-            color: #555;
+        }
+        .partners {
+            text-align: center;
+            margin-top: 30px;
         }
     </style>
-    <script>
-        function addComix() {
-            alert('Comix Added! 🎉');
-        }
-    </script>
 </head>
 <body>
-    <h1>Funny Bunny's Silly Comixs</h1>
-    <button onclick="addComix()">ADD COMIXS!!!</button>
-    <h2>Sample Comixs</h2>
-    <div class="comix-cards">
-        <div class="comix-card">YIS Goes Bananas</div>
-        <div class="comix-card">YIS Jumps High</div>
-        <div class="comix-card">YIS's Silly Face</div>
-        <div class="comix-card">YIS & Friends</div>
-    </div>
-    <h2>SVG Drawing of YIS the Bunny</h2>
+    <h1>Welcome to Funny Bunny's Silly Comixs!</h1>
+    <button class="btn" id="addComixsButton">ADD COMIXS</button>
     <svg width="100" height="100">
-        <!-- Bunny Body -->
-        <ellipse cx="50" cy="70" rx="30" ry="20" fill="#ffcccb" />
-        <!-- Bunny Eyes -->
-        <circle cx="35" cy="65" r="5" fill="black" />
-        <circle cx="65" cy="65" r="5" fill="black" />
-        <!-- Bunny Ears -->
-        <ellipse cx="35" cy="50" rx="8" ry="20" fill="pink" />
-        <ellipse cx="65" cy="50" rx="8" ry="20" fill="pink" />
+        <circle cx="50" cy="50" r="40" fill="#3f51b5" />
+        <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="white" font-size="20">YIS</text>
     </svg>
-    <footer>
-        Partner: Arion Weekly | Contact: <a href="mailto:funnybunnysillycomixs@outlook.com">funnybunnysillycomixs@outlook.com</a>
-    </footer>
+    <div class="comixs">
+        <div class="comix-card">😀 Comix 1</div>
+        <div class="comix-card">😂 Comix 2</div>
+        <div class="comix-card">😃 Comix 3</div>
+        <div class="comix-card">🤪 Comix 4</div>
+    </div>
+    <div class="partners">
+        <h2>Partners</h2>
+        <p>Arion Weekly</p>
+    </div>
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:contact@funnybunny.com">contact@funnybunny.com</a></p>
+    </div>
+    <script>
+        document.getElementById('addComixsButton').onclick = function() {
+            var input = document.createElement('input');
+            input.type = 'file';
+            input.accept = 'image/*';
+            input.click();
+        };
+    </script>
 </body>
 </html>
